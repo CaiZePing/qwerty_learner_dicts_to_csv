@@ -5,13 +5,23 @@
 
 使用的 [cJSON](https://github.com/DaveGamble/cJSON) 库 解析 json 文件
 
-**编译**
+
+## 编译
+
+cmake 编译
 
 ```shell
-gcc cJSON.c json2csv.c -o json2csv
+mkdir build
+cd build
+cmake ..
+make
 ```
 
-使用
+## 使用
+
+使用终端
+
+需要到 `bin` 目录下使用
 
 ```shell
 ./json2csv target_file_name 
