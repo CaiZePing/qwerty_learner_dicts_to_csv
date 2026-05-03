@@ -3,6 +3,8 @@
 [Qwerty Learner 官网](https://qwertylearner.cn/)</br>
 [Qwerty Learner github 仓库](https://github.com/RealKai42/qwerty-learner)
 
+Qwerty Learner 单词 `json` 文件在 github 仓库 `public/dicts` 目录下
+
 使用的 [cJSON](https://github.com/DaveGamble/cJSON) 库 解析 json 文件
 
 
