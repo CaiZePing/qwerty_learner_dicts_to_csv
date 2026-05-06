@@ -4,6 +4,9 @@
 
 #include "cJSON/cJSON.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
  * handle file
@@ -36,3 +39,7 @@ void concat_trans(cJSON* trans_array, char* buf, int buf_size);
 
 // Main logic: JSON parsing + CSV export
 int process(const char* in_json, const char* out_csv);
+
+#ifdef __cplusplus
+}
+#endif

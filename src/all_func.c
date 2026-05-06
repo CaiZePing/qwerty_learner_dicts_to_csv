@@ -51,7 +51,7 @@ int is_json_file(const char* filename)
 {
     if (!filename) return 0;
 
-    int len = strlen(filename);
+    size_t len = strlen(filename);
 
     if (len < 5) return 0;
 
@@ -76,7 +76,7 @@ int file_has_suffix(const char* path, const char* suffix)
 // Change the JSON extension to CSV
 int extension_json2csv(char*out,const char*filename)
 {
-    int len = strlen(filename);
+    size_t len = strlen(filename);
     memcpy(out,filename,len);
     out[len] = '\0';
     char *dot = strrchr(out, '.');
